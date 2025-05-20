@@ -20,6 +20,8 @@ This project demonstrates how to deploy and autoscale a Java Spring Boot fronten
 - AWS RDS instance running your database, with network access configured for the Kubernetes cluster.
 
 ## How to Deploy
+ ### Create name space 
+ kubectl create namespace springboot
  ### Deploy the Spring Boot application:
 kubectl apply -f springboot-deployment.yaml
  ### Deploy the Horizontal Pod Autoscaler:
